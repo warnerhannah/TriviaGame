@@ -21,7 +21,8 @@ p {
     text-align: center;
     font-size: 18px;
     padding: 10px;
-    color: gray;
+    color: black;
+    font-weight: bold;
 }
 
 h3 {
@@ -44,4 +45,9 @@ button {
     margin: 20px auto 20px 40%;
     font-size: 15px;
     color: white;
+}
+
+form {
+    text-align: left;
+    margin-left: 40%;
 }

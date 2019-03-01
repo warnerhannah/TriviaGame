@@ -11,13 +11,13 @@
     <h1>Totally Trivial Trivia!</h1>
 
     <div class="timeremaining">
-        <p><strong>TIME REMAINING: </strong></p>
+        <p id="timeleft"><strong>TIME REMAINING: </strong></p>
         <p id="countdown"></p>
         <p id="correctanswers"></p>
         <p id="incorrectanswers"></p>
     </div>
 
-    <div class="mainsection">
+    <div class="mainsection" id="mainsection">
         <h3 class="question" id="question1">How long is New Zealand's Ninety Mile Beach?</h3>
         <form>
             <input type="radio" name="answer1" value="correct">55 Miles<br>
@@ -59,6 +59,7 @@
         </form>    
     </div>
 
+    <!-- <button id="startgame">Start</button> -->
     <button id="submitButton">Submit</button>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>

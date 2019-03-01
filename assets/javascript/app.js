@@ -1,5 +1,5 @@
 //global variables
-var countdown = 30;
+var countdown = 120;
 var intervalId;
 var correctAnswers = 0;
 var incorrectAnswers = 0;

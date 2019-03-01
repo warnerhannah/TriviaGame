@@ -4,6 +4,21 @@ var intervalId;
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 
+$("#countdown").hide();
+$("#timeleft").hide();
+$("#mainsection").hide();
+$("#submitButton").hide();
+
+//when start is clicked begin quiz
+$("#startgame").on("click", function () {
+    $("#startgame").hide();
+    $("#countdown").show();
+    $("#timeleft").show();
+    $("#mainsection").show();
+    $("#submitButton").show();
+    intervalId = setInterval(countDown, 1000);
+});
+
 //count down function and interval function
 function countDown() {
     countdown--;
@@ -15,7 +30,6 @@ function countDown() {
         scoreGame();
     }
 }
-intervalId = setInterval(countDown, 1000);
 
 //if submit is clicked
 $("#submitButton").on("click", function () {
@@ -47,6 +61,7 @@ function scoreGame() {
     //clear questions and stuff off page
     $("#countdown").hide();
     $("#timeleft").hide();
-    $("#mainsection").hide();
     $("button").hide();
+    $("#mainsection").hide();
+
 };
